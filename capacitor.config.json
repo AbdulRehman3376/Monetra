@@ -1,8 +1,8 @@
 {
   "appId": "com.budgetbite.app",
-  "appName": "BudgetBite",
-  "webDir": "D:/Projects/MobileDev/BudgetBitee/frontend/public",
-  "backgroundColor": "#0f2419",
+  "appName": "Monetra",
+  "webDir": "frontend/public",
+  "backgroundColor": "#0b0c0d",
   "server": {
     "androidScheme": "http",
     "cleartext": true

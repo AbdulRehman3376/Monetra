@@ -64,3 +64,25 @@ docs/*AUDIT*
 /docs/
 /*.zip
 *.bak
+
+# Gradle cache
+.gradle-cache/
+.gradle/
+**/.gradle/
+
+# Build outputs
+build/
+**/build/
+
+# IDE files
+.idea/
+.vscode/
+
+# Sensitive files
+.env
+.env.*
+!.env.example
+
+# Generated files
+.dart_tool/
+.packages

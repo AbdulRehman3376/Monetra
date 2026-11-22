@@ -1,1 +1,0 @@
-﻿"""BudgetBite backend package."""

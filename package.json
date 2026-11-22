@@ -1,8 +1,8 @@
 {
-  "name": "budgetbite",
+  "name": "monetra",
   "version": "1.0.0",
   "private": true,
-  "description": "BudgetBite mobile app (Capacitor wrapper around frontend/public)",
+  "description": "MONETRA mobile app (Capacitor wrapper around frontend/public)",
   "scripts": {
     "sync": "cap sync",
     "android": "cap open android",
@@ -11,9 +11,13 @@
   "dependencies": {
     "@capacitor/android": "^7.0.0",
     "@capacitor/core": "^7.0.0",
-    "@capacitor/ios": "^7.0.0"
+    "@capacitor/filesystem": "^7.1.9",
+    "@capacitor/ios": "^7.0.0",
+    "@capacitor/local-notifications": "^7.0.7",
+    "@capacitor/share": "^7.0.4"
   },
   "devDependencies": {
-    "@capacitor/cli": "^7.0.0"
+    "@capacitor/cli": "^7.0.0",
+    "esbuild": "^0.28.2"
   }
 }

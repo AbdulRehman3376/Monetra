@@ -668,7 +668,7 @@ let nzc = 0;
 for (let d = Math.max(1, g.i0); d <= g.i1; d++) if (vis.some((k) => m.act[k][d] > 0)) nzc++;
 if (g.span <= 10 || nzc <= 5) {
 for (let d = Math.max(1, g.i0); d <= g.i1; d++) {
-const its = vis.filter((k) => m.act[k][d] > 0 && (!selKey || selKey === k)).map((k) => ({ k, y: Y(m.act[k][d]), t: fmtK(m.act[k][d]) })).sort((a, b) => a.y - b.y);
+const its = vis.filter((k) => m.act[k][d] > 0 && (!selKey || (selKey === k && d !== pk))).map((k) => ({ k, y: Y(m.act[k][d]), t: fmtK(m.act[k][d]) })).sort((a, b) => a.y - b.y);
 const px = X(d), sty = "paint-order:stroke;stroke:#17181a;stroke-width:2.5px", grp = [];
 its.forEach((it) => { const last = grp[grp.length - 1]; if (last && it.y - last[last.length - 1].y < lh) last.push(it); else grp.push([it]); });
 for (const gr of grp) {
